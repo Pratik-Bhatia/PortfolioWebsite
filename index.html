@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Geist Mono";
+        }
+
+        body {
+            background: linear-gradient(#fbfaf5, #dcddd7);
+            color: #222;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Navbar */
+        .navbar-container {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            z-index: 1000;
+        }
+
+        .navbar {
+            height: 60px;
+            background: #e7e8e2;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #5b5442;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .home-icon i {
+            font-size: 18px;
+        }
+
+        /* Main Heading */
+        .main-container {
+            margin-top: 300px;
+        }
+
+        .main h1 {
+            font-size: 144px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            line-height: 122px;
+            color: #414340;
+        }
+
+        .main p {
+            font-size: 27px;
+            margin-top: 50px;
+            max-width: 800px;
+            line-height: 43px;
+            font-weight: 200;
+            color: #414340;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            margin-top: 300px;
+        }
+
+        .quick-links h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 16px;
+            color: rgb(79, 86, 77);
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #222;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .links a:hover {
+            opacity: 0.7;
+        }
+
+        .links a i {
+            font-size: 18px;
+            color: #414340;
+            border: 1px solid #aaa;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .main h1 {
+                font-size: 120px;
+                line-height: 100px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .main h1 {
+                font-size: 90px;
+                line-height: 80px;
+            }
+            .main p {
+                font-size: 22px;
+                line-height: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-container {
+                width: 90%;
+                top: 20px;
+            }
+            .navbar {
+                height: 50px;
+            }
+            .navbar a {
+                font-size: 12px;
+            }
+            .home-icon i {
+                width: 15px;
+                height: 15px;
+            }
+            .main-container {
+                margin-top: 80px;
+            }
+            .main h1 {
+                font-size: 52px;
+                line-height: 62px;
+            }
+            .main p {
+                font-size: 15px;
+                line-height: 23px;
+            }
+            .desktop-quick-links {
+                display: none;
+            }
+            .mobile-sections {
+                display: block;
+            }
+            .quick-links{
+                margin-top:40px;
+            }
+            .profile{
+                margin-top:-20px
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main h1 {
+                font-size: 42px;
+                line-height: 52px;
+                margin-top:50px;
+            }
+            .main p {
+                margin-top: 25px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .quick-links{
+                margin-top:40px;
+            }
+            .profile{
+                margin-top:-20px
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <div class="navbar d-flex justify-content-around align-items-center">
+            <a href="index.html" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="container main-container">
+        <!-- Desktop Layout -->
+        <div class="row">
+            <!-- Main Section -->
+            <div class="col-lg-8">
+                <div class="main">
+                    <h1>Pratik <br>Bhatia</h1>
+                    <p>Innovating with AI, analyzing with data, and designing with intent-engineering intelligent solutions that shape the future of technology.</p>
+                </div>
+                
+                <!-- Desktop Profile Section (hidden on mobile) -->
+                <div class="profile d-none d-md-flex">
+                    <img src="profile.jpg" alt="Profile">
+                    <div class="profile-text">Data Analyst<br>UI/UX Design<br>Frontend Dev</div>
+                </div>
+            </div>
+            
+            <!-- Desktop Quick Links (visible only on larger screens) -->
+            <div class="col-lg-4 desktop-quick-links">
+                <div class="quick-links">
+                    <h3>WHERE YOU CAN START</h3>
+                    <div class="links">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>  Instagram
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>  Instagram
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>  Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Layout (visible only on smaller screens) -->
+        <div class="row mobile-sections d-md-none">
+            <!-- Mobile Profile Section -->
+            <div class="col-10 mt-5">
+                <div class="profile">
+                    <img src="profile.jpg" alt="Profile">
+                    <div class="profile-text">Data Analyst<br>UI/UX Design<br>Frontend Dev</div>
+                </div>
+                
+            </div>
+
+            <!-- Mobile Quick Links -->
+            <div class="col-12 mt-5 ">
+                <div class="quick-links mobile-quick-links">
+                    <h3>WHERE YOU CAN START</h3>
+                    <div class="links">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>  Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
