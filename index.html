@@ -182,7 +182,72 @@
         .btn-custom:hover {
             background-color: #d4d4d4;
         }
-        /* Responsive */
+
+        .title-section {
+      padding-top: 80px;
+      padding-bottom: 60px;
+      text-align: center;
+    }
+    
+    .title-section h1 {
+      color: #4a4a4a;
+      font-size: 4.5rem;
+      font-weight: 300;
+      letter-spacing: -1px;
+    }
+    
+    .superscript {
+      font-size: 1.25rem;
+      vertical-align: super;
+      margin-left: 2px;
+    }
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .connect-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f8f8f8;
+    }
+
+    /* Button Styles */
+    .connect-btn {
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(145deg, #222, #333);
+        padding: 25px 80px;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3), 
+                    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Hover Effect */
+    .connect-btn:hover {
+        background: linear-gradient(145deg, #333, #222);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 
+                    -3px -3px 6px rgba(255, 255, 255, 0.5);
+        transform: scale(1.02);
+    }
+
+    /* Active (Click) Effect */
+    .connect-btn:active {
+        box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3),
+                    inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+        transform: scale(0.98);
+    }  /* Responsive */
         @media (max-width: 1200px) {
             .main h1 {
                 font-size: 120px;
@@ -259,6 +324,18 @@
     .project-btn {
         padding: 1rem 0 !important; /* Reduce padding inside the button container */
     }
+    
+    .title-section h1 {
+      font-size: 2rem;
+    }
+    
+    .superscript {
+      font-size: 1.25rem;
+    }
+    .skill-icon {
+            width: 60px;
+            height: 60px;
+        }
         }
 
         @media (max-width: 480px) {
@@ -301,6 +378,15 @@
     .project-btn {
         padding: 1rem 0 !important; /* Reduce padding inside the button container */
     }
+    
+    .title-section h1 {
+      font-size: 2rem;
+    }
+    
+    .superscript {
+      font-size: 1.25rem;
+    }
+    
             
         }
 
@@ -518,7 +604,52 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="container"  >
+                    <div class="title-section">
+                        <h1>All skills<span class="superscript">03</span></h1>
+                      </div>
+                     
+                      <div class="container py-4">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap justify-content-center gap-2 rounded-2xl border">
+                                    <img src="html-removebg-preview.png" alt="HTML" class="skill-icon">
+                                    <img src="css-removebg-preview.png" alt="CSS" class="skill-icon">
+                                    <img src="bootstrap-removebg-preview.png" alt="Bootstrap" class="skill-icon">
+                                    <img src="wix-removebg-preview.png" alt="Wix" class="skill-icon">
+                                    <img src="figma-removebg-preview.png" alt="Figma" class="skill-icon">
+                                    <img src="wordpress-removebg-preview.png" alt="WordPress" class="skill-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-3">
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap justify-content-center gap-2 rounded-2xl border">
+                                    <img src="python-removebg-preview.png" alt="Python" class="skill-icon">
+                                    <img src="pandas.svg" alt="Pandas" class="skill-icon">
+                                    <img src="numpy-removebg-preview.png" alt="NumPy" class="skill-icon">
+                                    <img src="matplotlib-removebg-preview.png" alt="Matplotlib" class="skill-icon">
+                                    <img src="Tableau.png" alt="Tableau" class="skill-icon">
+                                    <img src="Power-BI-removebg-preview.png" alt="Power BI" class="skill-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                </div>
+                
+
+
     </div>
+
+    <div class="button-container">
+        <button class="connect-btn">Connect</button>
+    </div>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
