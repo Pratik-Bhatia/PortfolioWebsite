@@ -40,7 +40,7 @@
             backdrop-filter: blur(10px);
         }
 
-        .navbar a {
+        .navbar a, .footer a {
             text-decoration: none;
             color: #5b5442;
             font-size: 16px;
@@ -215,7 +215,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: #f8f8f8;
+       
     }
 
     /* Button Styles */
@@ -398,17 +398,17 @@
     <!-- Navbar -->
     <div class="navbar-container">
         <div class="navbar d-flex justify-content-around align-items-center">
-            <a href="index.html" class="home-icon">
+            <a href="#home" class="home-icon">
                 <i class="fas fa-home"></i>
             </a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            
+            <a href="#contact">Contact</a>
         </div>
     </div>
 
-    <div class="container main-container">
+    <div class="container main-container" id="home">
         <!-- Desktop Layout -->
         <div class="row">
             <!-- Main Section -->
@@ -428,20 +428,18 @@
             <!-- Desktop Quick Links (visible only on larger screens) -->
             <div class="col-lg-4 desktop-quick-links">
                 <div class="quick-links">
-                    <h3>WHERE YOU CAN START</h3>
+                    <h3>WHERE YOU CAN CONNECT</h3>
                     <div class="links">
-                        <a href="#">
+                        <a href="https://www.instagram.com/pratik.bhatia.967/?utm_source=ig_web_button_share_sheet">
                             <i class="fa-brands fa-instagram"></i>  Instagram
                         </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i> Instagram
+                        <a href="https://github.com/Pratik-Bhatia">
+                            <i class="fa-brands fa-github"></i> Github
                         </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>  Instagram
+                        <a href="https://www.linkedin.com/in/pratik-bhatia-aa29292a6/">
+                            <i class="fa-brands fa-linkedin"></i>  linkedin
                         </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>  Instagram
-                        </a>
+                       
                     </div>
                 </div>
             </div>
@@ -480,7 +478,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5 py-5 ">
+    <div class="container-fluid mt-5 py-5 " id="projects">
         <h5 class="text-uppercase fw-bold text-secondary d-flex align-items-center">
             Projects 
             <span class="flex-grow-1 border-bottom mx-3"></span>
@@ -606,7 +604,7 @@
                 </div>
 
 
-                <div class="container"  >
+                <div class="container" id="skills" >
                     <div class="title-section">
                         <h1>All skills<span class="superscript">03</span></h1>
                       </div>
@@ -646,10 +644,39 @@
 
     </div>
 
-    <div class="button-container">
+    <div class="button-container" id="contact">
         <button class="connect-btn">Connect</button>
     </div>
     
+    <footer class="footer mt-auto py-2 ">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Profile Box -->
+            <div class="d-flex align-items-center  p-2 rounded shadow">
+                <img src="profile.jpg" alt="Profile" class="rounded-circle" width="40" height="40">
+                <div class="ms-2">
+                    <small class="d-block text-muted">Data Analyst</small>
+                    <small class="d-block text-muted">UI/UX Designer</small>
+                    <small class="d-block text-muted">Frontend Developer</small>
+                    
+                </div>
+            </div>
+    
+            <!-- Navigation Links -->
+           
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                
+                <a href="#contact">Contact</a>
+         
+            <!-- Social Icons -->
+            <div>
+                <a href="https://www.instagram.com/pratik.bhatia.967/?utm_source=ig_web_button_share_sheet" class="btn btn-outline-secondary btn-sm"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/pratik-bhatia-aa29292a6/" class="btn btn-outline-secondary btn-sm"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Pratik-Bhatia" class="btn btn-outline-secondary btn-sm"><i class="fab fa-github"></i></a>
+
+            </div>
+        </div>
+    </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
