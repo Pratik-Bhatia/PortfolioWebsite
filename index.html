@@ -654,7 +654,7 @@
                             <div class="col-md-4 ">
                                 <a href="https://dairyoasis.in/">
                                 <div class="cards">
-                                    <img src="Screenshot 2025-03-21 144929.png" class="card-img-top" alt="Aggregate Singularity">
+                                    <img src="/Screenshot 2025-03-21 144929.png" class="card-img-top" alt="Aggregate Singularity">
                                     <div class="card-body text-center">
                                        
                                         <div class="tags">
@@ -703,8 +703,11 @@
     </div>
 
     <div class="button-container" id="contact">
-        <button class="connect-btn">Connect</button>
+        <button class="connect-btn" onclick="openGmail()">Connect</button>
     </div>
+    
+   
+    
     <footer class="footer mt-auto py-3 ">
         <div class="container">
             <!-- Large Screen Layout -->
@@ -765,6 +768,11 @@
     </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openGmail() {
+            window.location.href = "mailto:pratikbhatiahp@gmail.com";
+        }
+        </script>
    
 </body>
 </html>
